@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Form Clone</title>
+    <style>
+        body {
+            background-color: #f0ebf8;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        
+        .form-header {
+            padding: 20px;
+            border-top: 10px solid #673ab7;
+            margin: -30px -30px 20px -30px;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        h1 {
+            text-align: left;
+            color: #212121;
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .question-block {
+            background-color: #ffffff;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-size: 16px;
+            color: #212121;
+        }
+        
+        input[type="text"],
+        textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #bdbdbd;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        .radio-option {
+            margin-top: 10px;
+        }
+        
+        .submit-btn {
+            background-color: #673ab7;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+    
+        <form>
+            <div class="form-header">
+                <h1>Contact Information</h1>
+                <p>Please fill out your details below.</p>
+            </div>
+
+            <div class="question-block">
+                <label for="fname">Name</label><br>
+                <input type="text" id="fname" name="fname">
+            </div>
+
+            <div class="question-block">
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <div class="question-block">
+                <label>Preferred Method of Contact</label>
+                <div class="radio-option">
+                    <input type="radio" id="email" name="contact_method" value="Email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="phone" name="contact_method" value="Phone">
+                    <label for="phone">Phone</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
